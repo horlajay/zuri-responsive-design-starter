@@ -345,3 +345,201 @@ div.footer h6 {
     font-size: 1rem;
     padding-top: 6rem;
 }
+/* responsive design */
+@media screen and (max-width: 600px) {
+    
+    div.nav-bar {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        justify-content: center;
+        padding: 1rem ;
+        width: 100%;
+        background: #304353;
+        height: auto;
+        white-space: normal;
+    }
+    ul.nav-links{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        flex-wrap: wrap;
+        height: auto;
+        display: none;
+        height: 0;
+        
+        transition: 1s ease-in-out;
+    }
+    ul.nav-links.active{
+        display: block;
+        height: auto;
+    }
+    ul.nav-links li{
+        margin: 1rem 0;
+    }
+    div.hero-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    }
+    .brand{
+        width: 100%;
+        justify-content: space-around;
+        display: flex;
+        padding: 0;
+    }
+    .nav-toggler{
+        display: block;
+    }
+    /* sub hero section */
+    div.hero-background {
+        background: #f0f0f0;
+        padding: 1rem 0;
+        display: flex;
+        width: 100%;
+        flex-direction: column-reverse;
+        height: auto;
+        flex-wrap: wrap;
+    
+        /* justify-content: center;
+        align-items: center; */
+    }
+    div.hero-background-pos {
+        position: relative;
+        right: 0;
+        left: 0;
+        margin: auto;
+        display: block;
+        background: #fff;
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
+    }
+    div.background {
+        background: #fff;
+        box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
+        padding: 15px;
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin: 1rem auto;
+        
+    }
+    /* ***********snapshot section ***********/
+    
+    div.snapshot-team {
+        background: #f0f0f0;
+        text-align: center;
+        padding: 2rem 1rem;
+        width: 100%;
+        height: auto;
+    }
+    
+    div.snapshot-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #f0f0f0;
+        padding: 1rem  1rem;
+    }
+    
+    div.snapshot-box-content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    div.box1 {
+        background: #fff;
+        padding: 10px 20px;
+        /* width: 220px;
+        height: 230px; */
+        width: 100%;
+        height: auto;
+        margin: 10px;
+        border-radius: 2px;
+        box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
+    }
+    
+    div.box3 {
+        background: #304353;
+        padding: 10px 20px;
+        /* width: 220px;
+        height: 230px; */
+        width: 100%;
+        height: auto;
+        margin: 10px;
+        border-radius: 2px;
+        box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
+    }
+    
+    /* GALLERY SECTION */
+    
+    div.gallery-section {
+        background: #fff;
+        padding: 1rem;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        overflow-x: hidden;
+    }
+    
+    div.gallery-img {
+       display: flex;
+       
+       flex-wrap: wrap;
+       justify-content: center;
+       padding-top: 3rem;
+    }
+    
+    
+    
+    div.img img {
+        width: 200px;
+        height: auto;
+    }
+    /* FOOTER SESSION */
+    
+    div.footer {
+        background: #304353;
+        padding: 2rem 1rem;
+    }
+    div.footer-input {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 3rem;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    input[type="text"] {
+        width: 100%;
+    }
+    input[type="email"] {
+        width: 100%;
+        margin-top: 1rem;
+    } 
+    textarea {
+        width: 100%;
+        height: 200px;
+        padding: 0.5rem;
+        outline: none;
+        border: 1px solid #bcc3c7;
+        background: transparent;
+        color: #f0f0f0;
+    }
+    
+    }
+    
+    @media screen and (max-width:770px){
+      body{
+          overflow-x: hidden;
+          width: 100%;
+          white-space: normal;
+      }
+    
+    }
